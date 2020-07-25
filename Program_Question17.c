@@ -6,5 +6,6 @@ int main(){
 	for(x = 4; x <= 20; x = x + 2){
 	printf(" %d",x);
 	}
+	printf("\n");
 return 0;
 }
