@@ -1,5 +1,5 @@
 CC	= gcc
-CFLAGS	= -ansi -pedantic-errors -Wall -Werror -fno-builtin -Wextra -Wshadow -Wfatal-errors
+CFLAGS	= -std=gnu99 -pedantic-errors -Wall -Werror -fno-builtin -Wextra -Wshadow -Wfatal-errors
 LDFLAGS	= -lm
 
 %.o: %.c
