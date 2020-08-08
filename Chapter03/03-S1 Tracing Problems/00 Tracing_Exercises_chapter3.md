@@ -219,3 +219,58 @@ accomplished (the larger of 'x' and 'y' is put into 'max', and then 'max' is pri
 	}
 	...
 
+	...
+	int x,y;/* This code isn't completely right.*/
+	
+	if(x >= y){
+		x -= 5;
+		y += 5; 
+	}
+	
+	else{
+		x += 5;
+		y -= 5;
+	}
+	...
+
+11. The following program segment is preceded by a comment that describes
+ the goal. Try to use the data to see if the segment works in all cases.
+ If it does not, explian exactly what happens and show how to amend it so
+ that it does always work.
+	
+	/*
+	 *find the smallest integer whose
+	 *square is greater than y
+	 */
+	#include <stdio.h>
+	int main()
+	{
+		int number=0,test=0,y;
+		while(){
+			number++
+			test = number + number;
+			}
+		printf("%d is the smallest", number)<---- they forgot to add ';'.
+	}
+
+12. Trace step by step the execution of the following program as it reads
+in the data. Assume that the user types in these values requested:
+	5  7 -3  4  10 -1  7 0
+	#include <stdio.h>
+	int main()
+	{
+		int x;
+		
+		scanf("Please enter a number> %d",&x);
+		while(x != 0){
+			if(x < 0)
+				printf("\tnegative\n");
+			if(x > 0)
+				printf("\tpositive\n");
+			if(x > 5)
+				printf("\tmore\n");
+			else 
+				printf("\tless\n");
+			scanf("Please enter another number> %d",&x);
+		}
+	}
